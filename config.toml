@@ -35,7 +35,7 @@ weight = 3
   postsOnHomePage = 20 # this option will be ignored if showAllPostsOnHomePage is set to true
   tagsOverview = false # show tags overview by default.
   showProjectsList = true # show projects list by default (if projects data file exists).
-  projectsUrl = "https://github.com/gohugoio" # title link for projects list
+  # projectsUrl = "https://github.com/gohugoio" # title link for projects list
 
   # https://gohugo.io/functions/format/#hugo-date-and-time-templating-reference
   dateFormat = "2006-01-02" # default
@@ -55,6 +55,9 @@ weight = 3
   [[params.social]]
     name = "email"
     link = "skobovm@gmail.com"
+  [[params.social]]
+    name = "rss"
+    link = "https://skobovm.com/index.xml"
 
 [deployment]
   [[deployment.targets]]
