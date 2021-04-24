@@ -3,3 +3,4 @@
   * Decide on a font/color scheme
   * Add cheeky comment to google analytics tag
   * Latex resume build to PDF
+  * Host gtag.js in repo to prevent ad blocker interference

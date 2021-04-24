@@ -23,7 +23,7 @@ debug:
 build:
 	$(HUGO) -D
 
-upload:
-	@echo 'TODO'
+upload: build
+	AWS_PROFILE=skobovm $(HUGO) deploy
 
 .PHONY: help clean debug build upload

@@ -10,8 +10,18 @@ This static site is generated with [Hugo](https://gohugo.io/) and the theme is b
 # Install Hugo (mac)
 brew install hugo
 
+# Fetch submodules
+git submodule update --init --recursive
 
+# If it's a new machine, configure `skobovm` [AWS CLI profile](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-quickstart.html)
+aws configure --profile skobovm
 ```
 
-## Deploy
+## Build/Deploy
+```
+# Work locally
+make debug
 
+# Generate content and deploy to S3
+make upload
+```

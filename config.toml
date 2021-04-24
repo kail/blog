@@ -1,4 +1,4 @@
-baseURL = "http://skobovm.com"
+baseURL = "https://skobovm.com"
 languageCode = "en-us"
 title = "mikhail skobov"
 theme = "cactus"
@@ -24,7 +24,6 @@ url = "/about"
 weight = 3
 
 [params]
-
   colortheme = "light" # dark, light, white, or classic
   rss = true # generate rss feed. default value is false
   googleAnalyticsAsync = false # use asynchronous tracking. Synchronous tracking by default
@@ -56,3 +55,8 @@ weight = 3
   [[params.social]]
     name = "email"
     link = "skobovm@gmail.com"
+
+[deployment]
+  [[deployment.targets]]
+    name = "aws"
+    URL = "s3://skobovm.com?region=us-east-1"
